@@ -1,0 +1,23 @@
+<form>
+    <mat-card>
+        <mat-label>
+            Enter Role Name
+        </mat-label>
+        <input matInput placeholder="Enter Role Name">
+    </mat-card>
+    <mat-card>
+        <mat-label>
+            Enter Role Des
+        </mat-label>
+        <input matInput placeholder="Enter Role Des">
+    </mat-card>
+</form>
+
+<div #module>
+
+</div>
+<br>
+<button mat-raised-button color="primary" (click)="addModule()">Add Module</button>
+<br><br>
+<button mat-raised-button color="primary" (click)="saveData()">Save</button>
+<button mat-raised-button color="warn" (click)="cancelButton()">Cancel</button>

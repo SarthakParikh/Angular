@@ -1,0 +1,29 @@
+
+<form [formGroup]="loginFormGroup">
+    <mat-card>
+
+        <mat-card-header>
+            User Name : 
+        <input matInput  type="text" formControlName='userName'>
+    
+        </mat-card-header>
+        <div *ngIf="!isUserNameValid" style="color: red;"> 
+            Please Fill User Name
+        </div>
+    </mat-card>
+    
+    <mat-card>
+    
+        <mat-card-header>
+             Password        : 
+               <input matInput type="password" formControlName="userPassword">
+    
+        </mat-card-header>
+        <div *ngIf="!isUserNameValid" style="color: red;"> 
+            Please Enter Password
+        </div>
+    </mat-card>
+    
+</form>
+
+<button mat-raised-button color="primary" style="background-color:rgb(64, 64, 189) ; margin: 50px;color:white" (click)="loginButtonClicked()">Log In</button>
